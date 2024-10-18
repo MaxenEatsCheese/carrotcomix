@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Carrot Comix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Carrot Comix Logo">
+            <h1>Carrot Comix</h1>
+        </div>
+        <nav id="navbar">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Creators</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div id="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2>Fresh Stories, Bold Adventures</h2>
+            <p>Dive Into the World of Carrot Comix!</p>
+        </section>
+
+        <section class="featured-series">
+            <h2>Featured Series</h2>
+            <div class="series-grid">
+                <div class="series-card">
+                    <img src="series1.jpg" alt="Series 1" loading="lazy">
+                    <h3>Series Title 1</h3>
+                    <p>Short description of the series.</p>
+                    <a href="#" class="btn">Read Now</a>
+                </div>
+                <div class="series-card">
+                    <img src="series2.jpg" alt="Series 2" loading="lazy">
+                    <h3>Series Title 2</h3>
+                    <p>Short description of the series.</p>
+                    <a href="#" class="btn">Read Now</a>
+                </div>
+                <div class="series-card">
+                    <img src="series3.jpg" alt="Series 3" loading="lazy">
+                    <h3>Series Title 3</h3>
+                    <p>Short description of the series.</p>
+                    <a href="#" class="btn">Read Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-updates">
+            <h2>Latest News</h2>
+            <ul>
+                <li>New manga release coming this month!</li>
+                <li>Exclusive Q&A with creators next week.</li>
+                <li>Check out our new limited-edition merch drop.</li>
+            </ul>
+        </section>
+
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Carrot Comix. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

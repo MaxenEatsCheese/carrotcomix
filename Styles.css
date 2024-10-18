@@ -1,0 +1,267 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #ffa500;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    color: #fff;
+}
+
+nav ul.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-icon {
+    display: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    background-color: #ff7043;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
+}
+
+/* Featured Series */
+.featured-series {
+    padding: 2em;
+    text-align: center;
+}
+
+.series-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.series-card {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.series-card:hover {
+    transform: scale(1.05);
+}
+
+.series-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.series-card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin-top: 10px;
+    background-color: #ffa500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ff7043;
+}
+
+/* News Updates */
+.news-updates ul {
+    list-style-type: disc;
+    padding-left: 2em;
+    margin-top: 1em;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #ff7043;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+.newsletter form {
+    margin-top: 1em;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter button {
+    padding: 0.5em 1em;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.newsletter button:hover {
+    background-color: #ff7043;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul.nav-list {
+        display: none;
+    }
+
+    nav.active ul.nav-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .series-grid {
+        flex-direction: column;
+    }
+}
+/* Logo */
+.logo img {
+    max-width: 150px;  /* Adjust the max width of the logo */
+    height: auto;  /* Ensure the height scales proportionally */
+}
+/* Logo */
+.logo img {
+    max-width: 150px;  /* Adjust the max width of the logo */
+    height: auto;  /* Ensure the height scales proportionally */
+    border-radius: 15px;  /* Adjust the value for roundness */
+}
+/* Forum Styles */
+.forum {
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forum h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.forum-topics {
+    margin-bottom: 2em;
+}
+
+.forum-topics ul {
+    list-style-type: none;
+}
+
+.forum-topics li {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.forum-topics h4 {
+    margin-bottom: 0.5em;
+}
+
+.forum-topics p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.new-topic {
+    margin-top: 2em;
+}
+
+.new-topic h3 {
+    margin-bottom: 1em;
+}
+
+.new-topic form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-topic input[type="text"],
+.new-topic textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.new-topic button {
+    padding: 0.5em 1em;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.new-topic button:hover {
+    background-color: #ff7043;
+}
